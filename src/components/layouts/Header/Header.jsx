@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <NavLink style={{'marginRight'}} to="/">Home</NavLink>
+      <NavLink style={{ 'marginRight': '20px' }} to="/">
+        Home
+      </NavLink>
       <NavLink to="/login">Login</NavLink>
     </div>
   );
