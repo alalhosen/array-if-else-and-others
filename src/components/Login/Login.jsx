@@ -1,5 +1,7 @@
+import { GoogleAuthProvider } from 'firebase/auth/web-extension';
 import React from 'react';
 
+const provider=new GoogleAuthProvider();
 const handleGoogleSignIn =()=>{
     console.log('comming soon google')
 }
