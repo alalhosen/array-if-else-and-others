@@ -3,11 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./components/layouts/Main";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element:<Main></Main>
   },
 ]);
 
