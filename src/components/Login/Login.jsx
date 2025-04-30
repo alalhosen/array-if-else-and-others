@@ -1,7 +1,7 @@
 import React from 'react';
 
 const handleGoogleSignIn =()=>{
-    
+    console.log('comming soon google')
 }
 
 const Login = () => {
