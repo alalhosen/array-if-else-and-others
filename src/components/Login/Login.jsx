@@ -3,7 +3,7 @@ import React from 'react';
 const Login = () => {
     return (
         <div>
-            <button onClick={}>Login with google</button>
+            <button onClick={handleGoogleSignIn}>Login with google</button>
         </div>
     );
 };
