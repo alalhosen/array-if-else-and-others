@@ -1,6 +1,8 @@
 import React from 'react';
 
-const handleGoogleSignIn
+const handleGoogleSignIn =()=>{
+    
+}
 
 const Login = () => {
     return (
