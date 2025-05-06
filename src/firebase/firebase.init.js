@@ -11,9 +11,9 @@ const firebaseConfig = {
   projectId: "simple-firebase-02-d3329",
   storageBucket: "simple-firebase-02-d3329.firebasestorage.app",
   messagingSenderId: "921309182571",
-  appId: "1:921309182571:web:8b92d7c3af37d1d43a0f2e"
+  appId: "1:921309182571:web:8b92d7c3af37d1d43a0f2e",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = gitAuth(app)
+export const auth = getAuth(app);
