@@ -11,7 +11,7 @@ const provider = new GoogleAuthProvider();
   const handleGoogleSignIn = () => {
   signInWithPopup(auth, provider)
   .then(result =>{
-    console.log(result)
+    console.log(result.user)
     .catch(error=>{
       console.log('ERROR', error);
     })
