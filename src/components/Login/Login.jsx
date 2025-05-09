@@ -22,10 +22,12 @@ const Login = () => {
   return (
     <div>
       <button onClick={handleGoogleSignIn}>Login with google</button>
+      <button onClick={handleSignOut}>Sign Out</button>
       {user && 
         <div>
           <h4>{user.displayName}</h4>
           <p>Email: {user.email}</p>
+          <img src={user.photoURL} alt="" />
         </div>
     }
     </div>
