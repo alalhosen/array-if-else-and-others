@@ -23,6 +23,7 @@ const Login = () => {
     signOut(auth)
     .then(()=>{
       console.log('sign out done')
+      .catch(error=> console.log(error))
     })
   }
 
