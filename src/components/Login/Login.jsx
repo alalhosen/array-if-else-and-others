@@ -19,25 +19,33 @@ const Login = () => {
       });
   };
 
-  const handleSignOut=()=>{
+  const handleSignOut = () => {
     signOut(auth)
-    .then(()=>{
-      console.log('sign out done')
-      .catch(error=> console.log(error))
-    })
-  }
+      .then(() => {
+        console.log("sign out done");
+        setUser(null);
+      })
+      .catch((error) => console.log(error));
+  };
+
+  // if user exists ? signOut : sing in
 
   return (
     <div>
-      <button onClick={handleGoogleSignIn}>Login with google</button>
-      <button onClick={handleSignOut}>Sign Out</button>
-      {user && 
+      {/* <button onClick={handleGoogleSignIn}>Login with google</button>
+      <button onClick={handleSignOut}>Sign Out</button> */}
+      {
+      user ? 
+        <button onClick={handleSignOut}>Sign Out</button> : 
+        <button onClick={handleGoogleSignIn}>Login with google</button>
+      }
+      {user && (
         <div>
           <h4>{user.displayName}</h4>
           <p>Email: {user.email}</p>
           <img src={user.photoURL} alt="" />
         </div>
-    }
+      )}
     </div>
   );
 };
