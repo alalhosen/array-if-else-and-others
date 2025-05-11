@@ -20,7 +20,13 @@ const Login = () => {
       });
   };
 
-  const handleGithubSignIn = () => {};
+  const handleGithubSignIn = () => {
+    signInWithPopup(auth, githubProvider)
+    .then((result) =>{
+      console.log(result.user);
+      setUser(result.user)
+    });
+  };
 
   const handleSignOut = () => {
     signOut(auth)
