@@ -22,10 +22,11 @@ const Login = () => {
 
   const handleGithubSignIn = () => {
     signInWithPopup(auth, githubProvider)
-    .then((result) =>{
-      console.log(result.user);
-      setUser(result.user)
-    });
+    .then(result => {
+      console.log(result.user)
+      setUser(result.user);
+    })
+    .catch(error => console.log('ERROR', error))
   };
 
   const handleSignOut = () => {
