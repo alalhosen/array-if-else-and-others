@@ -42,6 +42,7 @@ const Login = () => {
 
   return (
     <div>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur iste minus et dolore ut sequi debitis!</h1>
       {/* <button onClick={handleGoogleSignIn}>Login with google</button>
       <button onClick={handleSignOut}>Sign Out</button> */}
       {user ? (
